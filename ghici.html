@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="stil.css" rel="stylesheet">
+    <link href="icon.jpg" type="image/jpg" rel="icon">
+</head>
+<body>
+     <nav id="nav">
+        <li><a href="index.html">Acasa</a></li>
+    <div class="meniu">
+    <li><a href="poze.html">Poze</a></li>
+    <div class="submeniu">
+         <li><a href="slider.html">Slider</a></li>
+         <li><a href="galerie.html">Galerie</a></li>
+    </div>
+    </div>
+    <li><a href="calculator.html">Calculator</a></li>
+    <div class="meniu">
+    <li><a href="joc.html">Jocuri</a></li>
+    <div class="submeniu">
+    <li><a href="ghici.html">Ghiceste Numarul</a></li>
+    <li><a href="zar.html">Zaruri</a></li>
+    <li><a href="phf.html">Piatra hartie</a></li>
+    </div>
+    </div>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="#"><span id="ceas" style="color:white;">00:00:00</span></a></li>
+    <li><a><span id="Bi" onclick="soare()">🌞/🌜<input type="checkbox" id="b" style="display:none">
+    
+</nav>
+    <script>
+function ceas(){
+  let data = new Date();
+  let ore = data.getHours().toString().padStart(2,0);
+  let minute = data.getMinutes().toString().padStart(2,0);
+  let secunde = data.getSeconds().toString().padStart(2,0);
+  let text = `${ore}:${minute}:${secunde}`;
+  document.getElementById('ceas').innerHTML = text;
+}
+ceas();
+setInterval(ceas, 1000)
+    </script>
+    <h2>Ghiceste Numarul</h2>
+    <div style="text-align:center">
+    <p>Apasa butonul pentru a incepe jocul</p>
+    <button onclick="fun()" class="phf" id="phf">🤔</button>
+    <p>Joc de modificat numere</p>
+    </div>
+        <div id="nr">
+        <div class="numar">3</div>
+        <div class="numar">4</div>
+        <div class="numar">5</div>
+        <div class="numar">6</div>
+        <div class="numar">2</div>
+        <div class="numar">5</div>
+        <div class="numar">1</div>
+        <div class="numar">8</div>
+        <div class="numar">1</div>
+
+    </div>
+    <p>Scrie ceva si calculatorul spune pentru tine.</p>
+    <div style="text-align:center">
+    <input id="vorbe"  placeholder="Scrie ceva..."/>
+    <button class="phf" id="phf" onmouseover="speechSynthesis.speak(new SpeechSynthesisUtterance(vorbe.value))">📢</button>
+   </div>
+   <script>
+        document.addEventListener("click" , function culori(){
+    numere = document.querySelectorAll('.numar');
+    numere.forEach(numar=>{
+        let random = Math.floor(Math.random()*6+1);
+        numar.style.backgroundImage = `url(${random}.jpg)`;
+        console.log(random);
+        numar.textContent = random;
+        if(random==2)
+    {
+        numar.style.color="black";
+    }
+    else{
+
+        numar.style.color="white";
+    }
+    })
+});
+    </script>
+    <script src="script.js"></script>
+    </body>
+    </html>

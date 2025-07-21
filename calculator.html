@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="stil.css" rel="stylesheet">
+    <link href="icon.jpg" type="image/jpg" rel="icon">
+</head>
+<body>
+      <nav id="nav">
+        <li><a href="index.html">Acasa</a></li>
+    <div class="meniu">
+    <li><a href="poze.html">Poze</a></li>
+    <div class="submeniu">
+         <li><a href="slider.html">Slider</a></li>
+         <li><a href="galerie.html">Galerie</a></li>
+    </div>
+    </div>
+    <li><a href="calculator.html">Calculator</a></li>
+    <div class="meniu">
+    <li><a href="joc.html">Jocuri</a></li>
+    <div class="submeniu">
+    <li><a href="ghici.html">Ghiceste Numarul</a></li>
+    <li><a href="zar.html">Zaruri</a></li>
+    <li><a href="phf.html">Piatra hartie</a></li>
+    </div>
+    </div>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="#"><span id="ceas" style="color:white;">00:00:00</span></a></li>
+    <li><a><span id="Bi" onclick="soare()">🌞/🌜<input type="checkbox" id="b" style="display:none">
+    
+</nav>
+    <script>
+function ceas(){
+  let data = new Date();
+  let ore = data.getHours().toString().padStart(2,0);
+  let minute = data.getMinutes().toString().padStart(2,0);
+  let secunde = data.getSeconds().toString().padStart(2,0);
+  let text = `${ore}:${minute}:${secunde}`;
+  document.getElementById('ceas').innerHTML = text;
+}
+ceas();
+setInterval(ceas, 1000)
+    </script>
+    <div class="body">
+    <div class="calculator">
+        <h1>Calculator</h1>
+    <input id="input" readonly>
+    <div class="butoane">
+    <button onclick="Pune('+')" class="semn">+</button>
+    <button onclick="Pune('7')">7</button>
+    <button onclick="Pune('8')">8</button>
+    <button onclick="Pune('9')">9</button>
+    <button onclick="Pune('-')"  class="semn">-</button>
+    <button onclick="Pune('4')">4</button>
+    <button onclick="Pune('5')">5</button>
+    <button onclick="Pune('6')">6</button>
+    <button onclick="Pune('*')"  class="semn">*</button>
+    <button onclick="Pune('1')">1</button>
+    <button onclick="Pune('2')">2</button>
+    <button onclick="Pune('3')">3</button>
+    <button onclick="Pune('/')"  class="semn">/</button>
+    <button onclick="Pune('0')">0</button>
+    <button onclick="Pune('.')">.</button>
+    <button onclick="Calculeaza()"  class="semn">=</button>
+    <button onclick="Sterge()" class="semn">C</button>
+    </div>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
