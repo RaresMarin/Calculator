@@ -280,7 +280,7 @@ p{
     background-color:hsl(264, 89%, 71%);
 
 }
-#virbe{
+#vorbe{
     font-size:30px;
 }
   .minge {
@@ -316,7 +316,9 @@ p{
         font-size: 20px;
 
     }
-    #virbe{
+    #vorbe{
+    width:50vw;
+    height:5vh;
         text-align: center;
     }
     #Imag1{
@@ -379,7 +381,7 @@ p{
     width:60px;
   }
 .poza{
-    height:80px;
+    height:150px;
     width:80px;
 }
   .calculator {
@@ -404,7 +406,7 @@ p{
     height: auto;
     aspect-ratio: 1 / 1;
     font-size: 2rem;
-    color:#965bbc;
+    color:black;
   }
 
   nav {
