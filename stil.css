@@ -1,0 +1,426 @@
+
+:root{
+    --culoare:rgb(242, 210, 189);
+    --culoare1:rgb(174, 164, 191);
+    --culoare2:rgb(59, 37, 44);
+    --culoare3:rgb(255, 253, 252);
+    --culoare4:rgb(110, 69, 96);
+}
+
+body{
+    background-color:var(--culoare);
+}
+#Bi{
+    cursor:pointer;
+}
+.body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:90vh;
+}
+h1{
+    text-align:center;
+    color:white;
+    display:block;
+    margin:0px auto;
+}
+nav{
+    display:inline-block;
+    width:100%;
+    background-color: var(--culoare4);
+    border-radius:40px;
+}
+nav li{
+    display:inline-block;
+    text-align:center;
+    list-style-type:none;
+    padding:15px;
+    gap:10px;
+    font-size:20px;
+    width:150px;
+    
+    }
+nav li a{
+    color:var(--culoare3);
+    text-decoration:none;
+}
+nav li:hover{
+    background-color:rgb(169, 69, 96);
+    border-radius:40px;
+}
+nav li:active{
+    background-color:rgb(199, 69, 96);
+    border-radius:40px;
+}
+nav li a:hover{
+    color:rgb(198, 112, 14);
+}
+nav li a:active{
+    color:rgb(251, 202, 87);
+}
+.calculator{
+    max-width:500px;
+    border-radius:50px;
+    overflow:hidden;
+    background-color:var(--culoare2);
+}
+#input{
+    max-width:500px;
+    padding:20px;
+    font-size:5rem;
+    text-align:left;
+    border:none;
+    display:block;
+    color:black;
+    background-color:var(--culoare3);
+}
+.butoane{
+    padding:20px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+     justify-content:center;
+    align-items:center;
+    gap:20px;
+}
+button{
+    width:100px;
+    height:100px;
+    border: none;
+    font-size:3rem;
+    border-radius:50px;
+    font-weight:bold ;
+    cursor:pointer;
+}
+button:hover{
+    background-color:rgba(225, 225, 225, 0.866);
+
+}
+button:active{
+    background-color:rgb(215, 215, 215);
+
+}
+.semn{
+    background-color:var(--culoare1);
+}
+.semn:hover{
+    background-color:rgba(174, 164, 191, 0.866);
+}
+
+.semn:active{
+    background-color:rgb(174, 164, 191);
+}
+
+.meniu {
+    display:inline-block;
+}
+
+.submeniu{
+    display:none;
+    color:white;
+}
+
+.meniu:hover .submeniu{
+    display:inline;
+}
+
+.submeniu li:hover{
+    background-color:rgba(139, 59, 96, 0.968);
+    border-radius: 40px;
+}
+
+#h1{
+    color:black;
+    padding:20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.phf{
+    display:inline-block;
+    background-color:rgb(137, 214, 237);
+}
+#C{
+    display:grid;
+    grid-template-columns:1fr 4fr 0fr;
+    justify-content:center;
+    align-items:center;
+}
+#Calculator , #Jucator{
+    background-color:rgb(137, 214, 237);
+    height:300px;
+    width:300px;
+    font-size:69px;
+        display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#span , #span1,p,#rezultat{
+    font-size:30px;
+}
+.prezentare{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:85vh;
+    margin-top:-100px;
+}
+#B{
+    height:700px;
+    display:block;
+    margin:auto;
+}
+.diapozitiv{
+    width:500px;
+    height:500px;
+}
+.sliduri{
+    position:relative;
+    width:100%;
+    margin:auto;
+    overflow:hidden;
+}
+.sliduri img{
+    width:100%;
+    display:none;
+}
+.sliduri img.arata{
+    display:block;
+}
+.mari{
+    margin-top:-400px;
+}
+.poza{
+    width:300px;
+    height:300px;
+    display:block;
+    margin:auto;
+}
+.poze{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    justify-content: center;
+    align-items: center;
+}
+#phf{
+    background-color:antiquewhite;
+    display:block;
+    margin:auto;
+}
+#nr{
+    display:grid;
+    grid-template-columns:repeat(9,1fr);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.numar{
+    height:20vh;
+    width:10vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:black;
+    font-size:30px;
+}
+p{
+    text-align:center;
+}
+.ph{
+    width:10vw;
+}
+#input1{
+    width:15vw;
+    font-size: 2.5rem;
+    padding: 10px;
+    }
+#yay{
+        font-size: 69px;
+        text-shadow:5px 6px 9px #c902b2;
+    }
+    #index{
+       color:white;
+       width:60%;
+    margin-top:100px;
+    }
+    #index2{
+        float:right;
+        width:40%;
+        display:grid;
+        justify-content: center;
+        align-items: center;
+        height:80vh;
+    }
+    #Imag{
+        border-radius:40vw;
+        border:10px solid #7b5175 ;
+        height:400px;
+    }
+    #Imag:hover{
+        filter:grayscale(0.5);
+        background-color: black;
+    }
+    #Imag1{
+        display:none;
+    }
+    #text{
+        text-align: center;
+        color:#ffffff;
+    }
+   #cuti{
+    background-color:hsl(199, 89%, 71%);
+    width:200px;
+    height:200px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    font-size:69px;
+    position:relative;
+}
+.Bici{
+    background-color:hsl(264, 89%, 71%);
+
+}
+#virbe{
+    font-size:30px;
+}
+  .minge {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      position: absolute;
+    }
+    #Imagine{
+        width:17%;
+    }
+    #butonf{
+        width:20%;
+        display:inline-block;
+        width:150px;
+        font-size:30px;
+        background-image: -webkit-linear-gradient(right,#965bbc, #EE82EE);
+    }
+@media (max-width: 768px) {
+     #butonf{
+        width:120px;
+        border-radius: none;
+    }
+    input{
+        font-size:1px;
+    }
+    #Imagine{
+        width:174px;
+    }
+    #cuti{
+        width:100px;
+        height:100px;
+        font-size: 20px;
+
+    }
+    #virbe{
+        text-align: center;
+    }
+    #Imag1{
+        display:block;
+        margin:auto;
+        border-radius:40vw;
+        border:5px solid #7b5175 ;
+        width: 60vw;
+    }
+     #index2{
+        display:none;
+     }
+    #index{
+        width:100%;
+        margin:0;
+    }
+    #yay{
+        font-size:9vw;
+    }
+    #input1{
+        width:15vw;
+    }
+    .ph{
+        width:30vw;
+    }
+    .mari{
+        width:50px;
+        height:50px;
+    }
+    p{
+        text-align:center;
+    }
+    .diapozitiv{
+    width:300px;
+    height:300px;
+}
+    #Calculator , #Jucator{
+    background-color:rgb(137, 214, 237);
+    height:100px;
+    width:100px;
+    font-size:39px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#span , #span1,p,#rezultat{
+    font-size:20px;
+}
+    .phf{
+    display:inline-block;
+    width:50px;
+    height:50px;
+    border-radius: 40px;
+}
+  nav li {
+    float: left;
+    display: block;
+    font-size: 1rem;
+    padding: 10px;
+    width:60px;
+  }
+.poza{
+    height:80px;
+    width:80px;
+}
+  .calculator {
+    max-width: 90%;
+    margin: 0 auto;
+    border-radius: 20px;
+  }
+
+  #input {
+    font-size: 2.5rem;
+    padding: 10px;
+  }
+
+  .butoane {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 10px;
+  }
+
+  button {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    font-size: 2rem;
+  }
+
+  nav {
+    border-radius: 20px;
+  }
+
+  .body {
+    flex-direction: column;
+    padding: 10px;
+  }
+}
+
+h2{
+    text-align:center;
+    font-size:30px;
+}
+
+label{
+    font-size:30px;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="stil.css" rel="stylesheet">
+    <link href="icon.jpg" type="image/jpg" rel="icon">
+</head>
+<body>
+      <nav id="nav">
+        <li><a href="index.html">Acasa</a></li>
+    <div class="meniu">
+    <li><a href="poze.html">Poze</a></li>
+    <div class="submeniu">
+         <li><a href="slider.html">Slider</a></li>
+         <li><a href="galerie.html">Galerie</a></li>
+    </div>
+    </div>
+    <li><a href="calculator.html">Calculator</a></li>
+    <div class="meniu">
+    <li><a href="joc.html">Jocuri</a></li>
+    <div class="submeniu">
+    <li><a href="ghici.html">Ghiceste Numarul</a></li>
+    <li><a href="zar.html">Zaruri</a></li>
+    <li><a href="phf.html">Piatra hartie</a></li>
+    </div>
+    </div>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="#"><span id="ceas" style="color:white;">00:00:00</span></a></li>
+    <li><a><span id="Bi" onclick="soare()">🌞/🌜<input type="checkbox" id="b" style="display:none">
+    
+</nav>
+    <script>
+function ceas(){
+  let data = new Date();
+  let ore = data.getHours().toString().padStart(2,0);
+  let minute = data.getMinutes().toString().padStart(2,0);
+  let secunde = data.getSeconds().toString().padStart(2,0);
+  let text = `${ore}:${minute}:${secunde}`;
+  document.getElementById('ceas').innerHTML = text;
+}
+ceas();
+setInterval(ceas, 1000)
+    </script>
+            <h2>Schimba fundalul</h2>
+    <div style="display:flex;justify-content: center;align-items: center;">
+
+     <label for="culi">Pune un # si 6 numere sau litere de la A la F.</label>
+   <br/>
+   <input name="culi" id="culi" style="    width:15vw;
+    font-size: 2.5rem;
+    padding: 10px;position:relative"type="text" placeholder="#1A23F5" >
+    <button type="submit" class="ph" onclick="culi()">Trimite</button>
+        </div>
+                <h2>Joc cu zaruri</h2>
+            <div style="display:flex;justify-content: center;align-items: center;">
+
+    <label for="zari">Număr de zaruri</label>
+    <input name="zari" id="input1" type="number" placeholder="0">
+    <button type="submit" class="ph" onclick="zari()">Trimite</button>
+        </div>
+    <span id="span"></span>
+    <div id="div">
+    </div>
+
+
+    <script src="script.js"></script>
+    </body>
+    </html>
