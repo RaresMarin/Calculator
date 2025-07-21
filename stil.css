@@ -397,6 +397,8 @@ p{
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     padding: 10px;
+    color:#965bbc;
+
   }
 
   button {
