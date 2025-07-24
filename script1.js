@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const cutie = document.getElementById('cuti');
+  let cutie = document.getElementById('cuti');
 let miscare = 100;
 let x = 0;
 let y = 0;
