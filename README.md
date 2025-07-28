@@ -1,19 +1,19 @@
 # 🎉 Discover Math the Easy and Fun Way!
 
-Welcome to a magical world of numbers! This isn't just any website — it's a vibrant playground full of **math adventures**, **interactive games**, **colorful visuals**, and plenty of laughs. Whether you're working on homework or exploring for fun, you're in the right place!
+Welcome to a magical world of numbers! This isn't just any website it's a vibrant playground full of **math adventures**, **interactive games**, **colorful visuals**, and plenty of laughs. Whether you're working on homework or exploring for fun, you're in the right place!
 
 ---
 
 ## ✨ What You Can Do Here
 
 ### 🧮 Super Math Calculator  
-Add, subtract, multiply, or divide — our awesome calculator does it all in a flash! Just type in your problem (like `31 + 15`), and *ZAP!* the answer appears instantly.
+Add, subtract, multiply, or divide our awesome calculator does it all in a flash! Just type in your problem (like `31 + 15`), and *ZAP!* the answer appears instantly.
 
 ### ✊✋✌️ Rock, Paper, Scissors Showdown  
 Test your luck and strategy against the computer in this classic game. Every round is fast-paced fun!
 
 ### 🕵️‍♂️ Number Guessing Game  
-A mystery number is hiding — can you find it? Use the clues and hunt it down like a true math detective!
+A mystery number is hiding can you find it? Use the clues and hunt it down like a true math detective!
 
 ### 🧊 Collect the Balls Game  
 Control a cool box and try to collect all the bouncing balls. It’s a fun and energetic way to test your reflexes!
@@ -25,7 +25,7 @@ Roll the dice, challenge your friends, and see who wins. It's simple, fun, and g
 Want a pink background? Or maybe green? Just type your favorite color, and watch the site transform instantly!
 
 ### 🗣️ Text-to-Speech Tool  
-Type something in the input box and hear it spoken out loud — perfect for learning pronunciation and listening skills.
+Type something in the input box and hear it spoken out loud perfect for learning pronunciation and listening skills.
 
 ### 🌐 Translation Tool  
 Instantly translate text into different languages to explore math across cultures.
@@ -34,7 +34,7 @@ Instantly translate text into different languages to explore math across culture
 Stay on track with a sleek digital clock showing the current time.
 
 ### 🌙 Dark Mode  
-Switch to dark mode for a more comfortable and accessible experience — especially at night!
+Switch to dark mode for a more comfortable and accessible experience especially at night!
 
 ### 🖼️ Math Info Galleries  
 Two beautiful galleries filled with helpful mathematical content to explore and enjoy.
@@ -66,7 +66,7 @@ Got a cool idea? Found a bug? Feel free to open a pull request. Contributions ar
 
 ## 📜 License
 
-This project is licensed under the **MIT License** — see the [LICENSE](./LICENSE) file for details.
+This project is licensed under the **MIT License** see the [LICENSE](./LICENSE) file for details.
 
 ---
 
