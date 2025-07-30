@@ -255,25 +255,18 @@ p{
         border:10px solid #7b5175 ;
         height:400px;
     }
-    #Imag:hover{
-        filter:grayscale(0.5);
-        background-color: black;
-    }
     #Imag1{
         display:none;
     }
-    #text{
-        text-align: center;
-        color:#ffffff;
-    }
    #cuti{
     background-color:hsl(199, 89%, 71%);
-    width:200px;
-    height:200px;
+    width:250px;
+    height:250px;
     display:flex;
+    text-align: center;
     justify-content: center;
     align-items:center;
-    font-size:69px;
+    font-size:40px;
     position:relative;
 }
 .Bici{
@@ -319,7 +312,7 @@ p{
     #vorbe{
     width:50vw;
     height:5vh;
-        text-align: center;
+    text-align: center;
     }
     #Imag1{
         display:block;
@@ -408,7 +401,10 @@ p{
     font-size: 2rem;
     color:black;
   }
-
+#vorbe{
+    width:50vw;
+    height:5vh;
+}
   nav {
     border-radius: 20px;
   }
@@ -416,6 +412,12 @@ p{
   .body {
     flex-direction: column;
     padding: 10px;
+  }
+  input{
+    width:20vw;
+    height:2vh;
+    font-size:10px;
+    text-align: center;
   }
 }
 
