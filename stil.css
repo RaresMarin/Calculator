@@ -391,7 +391,9 @@ p{
   #input {
     font-size: 2.5rem;
     padding: 10px;
+    width:100%
   }
+
 
   .butoane {
     grid-template-columns: repeat(4, 1fr);
