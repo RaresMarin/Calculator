@@ -260,7 +260,9 @@ function culi(){
                 put: "Schimba fundalul",
                 j: "Joc cu zaruri",
                 zar: "Număr de zaruri",
-
+                h: "Piatra, hartie, foarfeca",
+                p: "Alegerea jucatorului este",
+                p1: "Alegerea calculatorului este"
             },
             "English": {
                 titlu: "Learn Mathematics with games and fun❗",
@@ -286,6 +288,10 @@ function culi(){
                 schin: "Change background",
                 put: "Change background",
                 j: "Dice game",
+                zar: "Number of dice",
+                h: "Rock, paper, scissors,",
+                p: "The player's choice is,",
+                p1: "The computer's choice is,"
                 zar: "Number of dice"
             },
             "Français": {
@@ -312,6 +318,10 @@ function culi(){
                 schin: "Changer le fond",
                 put: "Changer le fond",
                 j: "Jeu de dés",
+                zar: "Nombre de dés",
+                h: "Pierre, papier, ciseaux,",
+                p: "Le choix du joueur est,",
+                p1: "Le choix de l'ordinateur est,"
                 zar: "Nombre de dés"
             }
         };
@@ -390,6 +400,22 @@ function culi(){
                 {
                 zar.textContent = Data.zar;
                 }
+                const h =document.getElementById('h1');
+                if(h!=null)
+                {
+                h.textContent = Data.h;
+                }
+                const p =document.getElementById('p');
+                if(p!=null)
+                {
+                p.textContent = Data.p;
+                }
+                const p1 =document.getElementById('p1');
+                if(p1!=null)
+                {
+                p1.textContent = Data.p1;
+                }
+
                 // Update main paragraph
                 const indexDiv = document.getElementById('index');
                 if(indexDiv!=null)
