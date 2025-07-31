@@ -415,7 +415,6 @@ function culi(){
                 {
                 p1.textContent = Data.p1;
                 }
-
                 // Update main paragraph
                 const indexDiv = document.getElementById('index');
                 if(indexDiv!=null)
