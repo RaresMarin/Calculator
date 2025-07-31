@@ -263,7 +263,6 @@ function culi(){
                 h: "Piatra, hartie, foarfeca",
                 p: "Alegerea jucatorului este",
                 p1: "Alegerea calculatorului este"
-
             },
             "English": {
                 titlu: "Learn Mathematics with games and fun❗",
@@ -293,6 +292,7 @@ function culi(){
                 h: "Rock, paper, scissors,",
                 p: "The player's choice is,",
                 p1: "The computer's choice is,"
+                zar: "Number of dice"
             },
             "Français": {
                 titlu: "Découvre les mathématiques en t'amusant❗",
@@ -322,6 +322,7 @@ function culi(){
                 h: "Pierre, papier, ciseaux,",
                 p: "Le choix du joueur est,",
                 p1: "Le choix de l'ordinateur est,"
+                zar: "Nombre de dés"
             }
         };
   function schimbaLimba() {
@@ -414,7 +415,6 @@ function culi(){
                 {
                 p1.textContent = Data.p1;
                 }
-                
                 // Update main paragraph
                 const indexDiv = document.getElementById('index');
                 if(indexDiv!=null)
