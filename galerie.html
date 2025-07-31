@@ -9,40 +9,33 @@
 </head>
 <body>
      <nav id="nav">
-        <li><a href="index.html">Acasa</a></li>
+        <li><a href="index.html" id="Acasa">Acasa</a></li>
     <div class="meniu">
-    <li><a href="poze.html">Poze</a></li>
+    <li><a href="poze.html" id="Poze">Poze</a></li>
     <div class="submeniu">
-         <li><a href="slider.html">Slider</a></li>
-         <li><a href="galerie.html">Galerie</a></li>
+         <li><a href="slider.html" id="Slider">Slider</a></li>
+         <li><a href="galerie.html" id="Galerie">Galerie</a></li>
     </div>
     </div>
-    <li><a href="calculator.html">Calculator</a></li>
+    <li><a href="calculator.html" id="Calculaotr">Calculator</a></li>
     <div class="meniu">
-    <li><a href="joc.html">Jocuri</a></li>
+    <li><a href="joc.html" id="Joc">Jocuri</a></li>
     <div class="submeniu">
-    <li><a href="ghici.html">Ghiceste Numarul</a></li>
-    <li><a href="zar.html">Zaruri</a></li>
-    <li><a href="phf.html">Piatra hartie</a></li>
+    <li><a href="ghici.html" id="Ghici">🔢❓</a></li>
+    <li><a href="zar.html" id="Zar">🎲</a></li>
+    <li><a href="phf.html" id="Pia">👊✋✌️</a></li>
     </div>
     </div>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="#"><span id="ceas" style="color:white;">00:00:00</span></a></li>
-    <li><a><span id="Bi" onclick="soare()">🌞/🌜<input type="checkbox" id="b" style="display:none">
-    
-</nav>
-    <script>
-function ceas(){
-  let data = new Date();
-  let ore = data.getHours().toString().padStart(2,0);
-  let minute = data.getMinutes().toString().padStart(2,0);
-  let secunde = data.getSeconds().toString().padStart(2,0);
-  let text = `${ore}:${minute}:${secunde}`;
-  document.getElementById('ceas').innerHTML = text;
-}
-ceas();
-setInterval(ceas, 1000)
-    </script>
+    <li><a href="contact.html" id="cont">Contact</a></li>
+    <label for="limba"></label>
+    <input name="limba" list="limbe" id="limba" placeholder="Română"/>
+    <datalist id="limbe">
+        <option value="Română"></option>
+        <option value="English"></option>
+        <option value="Français"></option>
+    </datalist>
+    <li><a><spna id="ceas" style="color:white;">00:00:00</spna></a></li>
+    </nav>
     <span id="spanu" style="display:flex;justify-content: center;align-items: center;font-size:30px;height:100px;" ></span>
     <div class="prezentare">
      <button onclick="inainte(-1)" style="float:right;">&#10094</button>
