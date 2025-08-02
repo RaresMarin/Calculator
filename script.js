@@ -458,6 +458,228 @@ function inainte(n){
     clearInterval(interval);
     }
 }
+           const traducere = {
+            "Română": {
+                titlu: "Descoperă Matematica prin Joc și Distracție❗",
+                paragraf: "Aici nu e un site obișnuit — e un loc plin de aventuri matematice, jocuri haioase și imagini colorate, unde copiii ca tine vin să se joace, să învețe și să râdă cu poftă!",
+                calculator: "Super calculator de mate",
+                calculator_desc: "care știe să adune, să scadă, să înmulțească și chiar să împartă fără să se încurce!",
+                calculator_example: "Dacă ai teme sau doar vrei să verifici cât face 34 + 35... ZAP! Calculatorul nostru îți spune pe loc!",
+                joc1: "Piatră, hârtie, foarfecă",
+                joc1_desc: "Intră în lupta amuzantă cu „Piatră, hârtie, foarfecă”👊✋✌️ și vezi dacă poți învinge computerul! Fiecare rundă e rapidă și plină de suspans! 🔢🎯",
+                joc2: "Ghicirea numerelor",
+                joc2_desc: "Încearcă jocul „Ghicirea numerelor” – unde un număr misterios s-a ascuns, iar tu trebuie să-l găsești! Primești indicii și totul e ca o vânătoare de comori cu cifre!",
+                acasa: "Acasa" ,
+                poze: "Poze",
+                galerie: "Galerie" ,
+                jocuri: "Jocuri",
+                calculator: "Calculator",
+                apasa: "Apasa pe o poza",
+                culegere: "Culegere",
+                cutie: "Cutie miscătoare",
+                num:"Ghiceste Numarul" ,
+                mod: "Joc de modificat numere",
+                but: "Apasa butonul pentru a incepe jocul" ,
+                scri: "Scrie ceva si calculatorul spune pentru tine",
+                schin: "Schimba fundalul",
+                put: "Schimba fundalul",
+                j: "Joc cu zaruri",
+                zar: "Număr de zaruri",
+                h: "Piatra, hartie, foarfeca",
+                p: "Alegerea jucatorului este",
+                p1: "Alegerea calculatorului este"
+
+            },
+            "English": {
+                titlu: "Learn Mathematics with games and fun❗",
+                paragraf: "This is not a simple site - it's a place with math adventures, fun games and colorful images, where kids come to play, learn and laugh.",
+                calculator: "Super math calculator",
+                calculator_desc: "that can add, subtract, multiply and even divide without getting confused!",
+                calculator_example: "If you have homework or just want to check what 34 + 35 equals... ZAP! Our calculator tells you right away!",
+                joc1: "Rock, Paper, Scissors",
+                joc1_desc: "Join the fun battle with „Rock, Paper, Scissors”👊✋✌️ and see if you can beat the computer! Each round is quick and full of suspense! 🔢🎯",
+                joc2: "Number Guessing",
+                joc2_desc: "Try the „Number Guessing” game – where a mysterious number has hidden, and you need to find it! You get clues and it's like a treasure hunt with numbers!",
+                acasa: "Home" ,
+                poze: "Pictures",
+                galerie: "Galery" ,
+                jocuri: "Games",
+                apasa: "Press on a picture",
+                culegere: "Collection",
+                cutie: "Moving Box",
+                num: "Guess the number" ,
+                mod: "Modify the numbers" ,
+                but: "Press the button to start the game",
+                scri: "Write something and the calculator says it out loud",
+                schin: "Change background",
+                put: "Change background",
+                j: "Dice game",
+                zar: "Number of dice",
+                h: "Rock, paper, scissors,",
+                p: "The player's choice is,",
+                p1: "The computer's choice is,"
+            },
+            "Français": {
+                titlu: "Découvre les mathématiques en t'amusant❗",
+                paragraf: "Ici, ce n'est pas un site ordinaire — c'est un lieu plein d'aventures mathématiques, de jeux rigolos et d'images colorées, où les enfants comme toi viennent pour jouer, apprendre et rire aux éclats !",
+                calculator: "Super calculateur de maths",
+                calculator_desc: "qui sait additionner, soustraire, multiplier et même diviser sans se tromper !",
+                calculator_example: "Si tu as des devoirs ou si tu veux simplement vérifier ce que fait 34 + 35... ZAP! Notre calculateur te le dit immédiatement !",
+                joc1: "Pierre, papier, ciseaux",
+                joc1_desc: "Rejoins le combat amusant avec „Pierre, papier, ciseaux”👊✋✌️ et vois si tu peux battre l'ordinateur ! Chaque manche est rapide et pleine de suspense ! 🔢🎯",
+                joc2: "Devine le nombre",
+                joc2_desc: "Essaie le jeu „Devine le nombre” – où un nombre mystérieux s'est caché, et tu dois le trouver ! Tu obtiens des indices et c'est comme une chasse au trésor avec des chiffres !",
+                acasa: "Maison" ,
+                poze: "Phoos",
+                galerie: "Galerie" ,
+                jocuri: "Jeux",
+                apasa: "Clique sur une image",
+                culegere: "Collection",
+                cutie: "Boîte mobile",
+                num: "Devine le nombre",
+                mod: "Modifie les nombres",
+                but: "Appuie sur le bouton pour commencer le jeu",
+                scri: "Écris quelque chose et la calculatrice le dit à haute voix",
+                schin: "Changer le fond",
+                put: "Changer le fond",
+                j: "Jeu de dés",
+                zar: "Nombre de dés",
+                h: "Pierre, papier, ciseaux,",
+                p: "Le choix du joueur est,",
+                p1: "Le choix de l'ordinateur est,"
+            }
+        };
+  function schimbaLimba() {
+            const limbaAleasa = document.getElementById('limba').value;
+            const Data = traducere[limbaAleasa];
+            
+            if (Data) {
+                // Update title
+                const yay = document.getElementById('yay');
+                if(yay!=null)
+                {
+                yay.textContent = Data.titlu;
+                }
+                const h1 = document.getElementById('H');
+                if(h1!=null)
+                {
+                    h1.textContent = Data.apasa;
+                }
+                const h2 = document.getElementById('h2');
+                if(h2!=null)
+                {
+                    h2.textContent = Data.cutie;
+                }
+                const dam = document.getElementById('dam');
+                if(dam!=null)
+                {
+                    dam.textContent = Data.culegere;
+                }
+                const cal = document.getElementById('Cal')
+                {
+                    if(cal!=null)
+                        cal.textContent = Data.calculator;
+                }
+                document.getElementById('Acasa').textContent = Data.acasa;
+                document.getElementById('Poze').textContent = Data.poze;
+                document.getElementById('Galerie').textContent = Data.galerie;
+                document.getElementById('Joc').textContent = Data.jocuri;
+                const num =document.getElementById('num');
+                if(num!=null)
+                {
+                num.textContent = Data.num;
+                }
+                const but = document.getElementById('but');
+                if(but!=null)
+                {
+                but.textContent = Data.but;
+                }
+                const mod = document.getElementById('mod');
+                if(mod!=null)
+                {
+                mod.textContent = Data.mod;
+                }
+                const scri =document.getElementById('scri');
+                if(scri!=null)
+                {
+                scri.textContent = Data.scri;
+                }
+                const schin =document.getElementById('schin');
+                if(schin!=null)
+                {
+                schin.textContent = Data.schin;
+                }
+                const put =document.getElementById('put');
+                if(put!=null)
+                {
+                put.textContent = Data.put;
+                }
+                const j =document.getElementById('j');
+                if(j!=null)
+                {
+                j.textContent = Data.j;
+                }
+                const zar =document.getElementById('zar');
+                if(zar!=null)
+                {
+                zar.textContent = Data.zar;
+                }
+                const h =document.getElementById('h1');
+                if(h!=null)
+                {
+                h.textContent = Data.h;
+                }
+                const p =document.getElementById('p');
+                if(p!=null)
+                {
+                p.textContent = Data.p;
+                }
+                const p1 =document.getElementById('p1');
+                if(p1!=null)
+                {
+                p1.textContent = Data.p1;
+                }
+                
+                // Update main paragraph
+                const indexDiv = document.getElementById('index');
+                if(indexDiv!=null)
+                {
+                indexDiv.innerHTML = `
+                    <p>${Data.paragraf}</p>
+                    <p><strong>${Data.calculator}</strong> ${Data.calculator_desc}</p>
+                    <p>${Data.calculator_example}</p>
+                    <p><strong>${Data.joc1}</strong> ${Data.joc1_desc}</p>
+                    <p><strong>${Data.joc2}</strong> ${Data.joc2_desc}</p>
+                `;
+            }
+        }
+    }
+        schimbaLimba();
+
+        document.getElementById('limba').addEventListener("change", schimbaLimba);
+        
+function ceas(){
+  let data = new Date();
+  let ore = data.getHours().toString().padStart(2,0);
+  let minute = data.getMinutes().toString().padStart(2,0);
+  let secunde = data.getSeconds().toString().padStart(2,0);
+  let text = `${ore}:${minute}:${secunde}`;
+  document.getElementById('ceas').innerHTML = text;
+}
+ceas();
+setInterval(ceas, 1000);
+
+let imagineIndex = 1;
+let interval = setInterval(() => inainte(1), 5000);
+
+function inainte(n){
+    imagineIndex += n;
+    Arata(imagineIndex);
+    if(n<0)
+    {
+    clearInterval(interval);
+    }
+}
 
 function Arata(n){
 
@@ -495,3 +717,4 @@ function Arata(n){
     }
     })
 });
+

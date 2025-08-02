@@ -38,7 +38,7 @@ nav li{
     padding:15px;
     gap:10px;
     font-size:20px;
-    width:150px;
+    width:140px;
     
     }
 nav li a{
@@ -255,33 +255,42 @@ p{
         border:10px solid #7b5175 ;
         height:400px;
     }
-    #Imag:hover{
-        filter:grayscale(0.5);
-        background-color: black;
-    }
     #Imag1{
         display:none;
     }
-    #text{
-        text-align: center;
-        color:#ffffff;
-    }
+        label{
+            font-size: 39px;
+        }
+        .Input{
+            font-size: 25px;
+            padding:5px;
+            height:40px;
+            border-radius: 20px;
+            border:none;
+            background-color: rgb(110, 69, 96);
+            color:rgb(242, 210, 189); 
+          }
+          .Input::placeholder{
+           color:rgb(242, 222, 189); 
+           text-align:center;
+          }
    #cuti{
     background-color:hsl(199, 89%, 71%);
-    width:200px;
-    height:200px;
+    width:250px;
+    height:250px;
     display:flex;
+    text-align: center;
     justify-content: center;
     align-items:center;
-    font-size:69px;
+    font-size:40px;
     position:relative;
 }
 .Bici{
     background-color:hsl(264, 89%, 71%);
 
 }
-#virbe{
-    font-size:30px;
+#vorbe{
+    font-size:40px;
 }
   .minge {
       width: 40px;
@@ -299,13 +308,41 @@ p{
         font-size:30px;
         background-image: -webkit-linear-gradient(right,#965bbc, #EE82EE);
     }
+    input{
+        color:black;
+        text-align: center;
+    }
+    #limba{
+        width:8%;
+        font-size:20px;
+    }
+#culi{
+    width:20vw;
+    font-size: 2.5rem;
+    padding: 10px;
+    display:block;
+    margin:auto;
+}
+#hey{
+    display:block;
+    margin:auto;
+    width:10%;
+}
 @media (max-width: 768px) {
+    #hey{
+    width:30%;
+
+}
+    #culi{
+    width:50vw;
+    }
+        #limba{
+        width:30vw;
+        font-size:10px;
+    }
      #butonf{
         width:120px;
         border-radius: none;
-    }
-    input{
-        font-size:1px;
     }
     #Imagine{
         width:174px;
@@ -316,7 +353,7 @@ p{
         font-size: 20px;
 
     }
-    #virbe{
+    #vorbe{
         text-align: center;
     }
     #Imag1{
@@ -379,7 +416,7 @@ p{
     width:60px;
   }
 .poza{
-    height:80px;
+    height:150px;
     width:80px;
 }
   .calculator {
@@ -391,6 +428,7 @@ p{
   #input {
     font-size: 2.5rem;
     padding: 10px;
+    width:100%;
   }
 
   .butoane {
@@ -405,7 +443,11 @@ p{
     aspect-ratio: 1 / 1;
     font-size: 2rem;
   }
-
+#vorbe{
+    width:50vw;
+    font-size:20px;
+    height:5vh;
+}
   nav {
     border-radius: 20px;
   }
@@ -413,6 +455,14 @@ p{
   .body {
     flex-direction: column;
     padding: 10px;
+  }
+  input{
+    width:50vw;
+    height:2vh;
+    font-size:20px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
