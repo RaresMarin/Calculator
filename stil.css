@@ -232,6 +232,8 @@ p{
     width:15vw;
     font-size: 2.5rem;
     padding: 10px;
+    display:block;
+    margin: auto;
     }
 #yay{
         font-size: 69px;
@@ -439,6 +441,7 @@ p{
 
   button {
     width: 100%;
+    color:black;
     height: auto;
     aspect-ratio: 1 / 1;
     font-size: 2rem;
