@@ -181,21 +181,21 @@ let imaginii = [];
 
  function m(){
     const cutie = document.getElementById('cuti');
-    const text = document.getElementById('virbe');
+    const text = document.getElementById('vorbe');
     text.textContent = "Nu o face!😔"
     cutie.style.backgroundColor="yellow";
 
  }
  function n(){
     const cutie = document.getElementById('cuti');
-    const text = document.getElementById('virbe');
+    const text = document.getElementById('vorbe');
     text.textContent = "Yaayyy!😁"
     cutie.style.backgroundColor="#b35edeff";
     
  }
  function p(){
     const cutie = document.getElementById('cuti');
-    const text = document.getElementById('virbe');
+    const text = document.getElementById('vorbe');
     text.textContent = "Offf!😠"
     cutie.style.backgroundColor="tomato";
     
@@ -231,8 +231,19 @@ if(b.checked==true)
 function culi(){
     const culoare = document.getElementById('culi').value;
     document.body.style.backgroundColor = culoare;
-
 }
+        
+function ceas(){
+  let data = new Date();
+  let ore = data.getHours().toString().padStart(2,0);
+  let minute = data.getMinutes().toString().padStart(2,0);
+  let secunde = data.getSeconds().toString().padStart(2,0);
+  let text = `${ore}:${minute}:${secunde}`;
+  document.getElementById('ceas').innerHTML = text;
+}
+ceas();
+setInterval(ceas, 1000);
+
            const traducere = {
             "Română": {
                 titlu: "Descoperă Matematica prin Joc și Distracție❗",
@@ -432,18 +443,6 @@ function culi(){
         schimbaLimba();
 
         document.getElementById('limba').addEventListener("change", schimbaLimba);
-        
-function ceas(){
-  let data = new Date();
-  let ore = data.getHours().toString().padStart(2,0);
-  let minute = data.getMinutes().toString().padStart(2,0);
-  let secunde = data.getSeconds().toString().padStart(2,0);
-  let text = `${ore}:${minute}:${secunde}`;
-  document.getElementById('ceas').innerHTML = text;
-}
-ceas();
-setInterval(ceas, 1000);
-
 let imagineIndex = 1;
 
 
@@ -479,3 +478,20 @@ function Arata(n){
     bici.textContent = Bici[imagineIndex-1];
     }
 }
+  document.addEventListener("click" , function culori(){
+    numere = document.querySelectorAll('.numar');
+    numere.forEach(numar=>{
+        let random = Math.floor(Math.random()*6+1);
+        numar.style.backgroundImage = `url(${random}.jpg)`;
+        console.log(random);
+        numar.textContent = random;
+        if(random==2)
+    {
+        numar.style.color="black";
+    }
+    else{
+
+        numar.style.color="white";
+    }
+    })
+});
