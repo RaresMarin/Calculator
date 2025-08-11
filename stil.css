@@ -65,6 +65,10 @@ nav li a:active{
     overflow:hidden;
     background-color:var(--culoare2);
 }
+a{
+    text-decoration: none;
+    color:black
+}
 #input{
     max-width:500px;
     padding:20px;
@@ -232,7 +236,22 @@ p{
     width:15vw;
     font-size: 2.5rem;
     padding: 10px;
+    display:block;
+    margin: auto;
     }
+footer{
+    background-color: transparent;
+    width:95%;
+    height:5vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+    margin:0;
+    z-index:12;
+    position: absolute;
+
+}
 #yay{
         font-size: 69px;
         text-shadow:5px 6px 9px #c902b2;
@@ -439,6 +458,7 @@ p{
 
   button {
     width: 100%;
+    color:black;
     height: auto;
     aspect-ratio: 1 / 1;
     font-size: 2rem;
