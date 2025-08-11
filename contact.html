@@ -6,71 +6,40 @@
     <title>Calculator</title>
     <link href="stil.css" rel="stylesheet">
     <link href="icon.jpg" type="image/jpg" rel="icon">
-    <style>
-        label{
-            font-size: 39px;
-        }
-        input{
-            font-size: 25px;
-            padding:5px;
-            height:40px;
-            border-radius: 20px;
-            border:none;
-            background-color: rgb(110, 69, 96);
-            color:rgb(242, 210, 189); 
-          }
-          input::placeholder{
-           color:rgb(242, 210, 189); 
-           text-align:center;
-          }
-    </style>
 </head>
 <body style="background-image:url('poza2.png');background-size:cover;background-repeat: no-repeat;">
-      <nav id="nav">
-        <li><a href="index.html">Acasa</a></li>
+     <nav id="nav">
+        <li><a href="index.html" id="Acasa">Acasa</a></li>
     <div class="meniu">
-    <li><a href="poze.html">Poze</a></li>
+    <li><a href="poze.html" id="Poze">Poze</a></li>
     <div class="submeniu">
-         <li><a href="slider.html">Slider</a></li>
-         <li><a href="galerie.html">Galerie</a></li>
+         <li><a href="slider.html" id="Slider">Slider</a></li>
+         <li><a href="galerie.html" id="Galerie">Galerie</a></li>
     </div>
     </div>
-    <li><a href="calculator.html">Calculator</a></li>
+    <li><a href="calculator.html" id="Calculaotr">Calculator</a></li>
     <div class="meniu">
-    <li><a href="joc.html">Jocuri</a></li>
+    <li><a href="joc.html" id="Joc">Jocuri</a></li>
     <div class="submeniu">
-    <li><a href="ghici.html">Ghiceste Numarul</a></li>
-    <li><a href="zar.html">Zaruri</a></li>
-    <li><a href="phf.html">Piatra hartie</a></li>
+    <li><a href="ghici.html" id="Ghici">🔢❓</a></li>
+    <li><a href="zar.html" id="Zar">🎲</a></li>
+    <li><a href="phf.html" id="Pia">👊✋✌️</a></li>
     </div>
     </div>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="#"><span id="ceas" style="color:white;">00:00:00</span></a></li>
-    
-</nav>
-    <script>
-function ceas(){
-  let data = new Date();
-  let ore = data.getHours().toString().padStart(2,0);
-  let minute = data.getMinutes().toString().padStart(2,0);
-  let secunde = data.getSeconds().toString().padStart(2,0);
-  let text = `${ore}:${minute}:${secunde}`;
-  document.getElementById('ceas').innerHTML = text;
-}
-ceas();
-setInterval(ceas, 1000)
-    </script>
+    <li><a href="contact.html" id="cont">Contact</a></li>
+    <li><a><spna id="ceas" style="color:white;">00:00:00</spna></a></li>
+    </nav>
     <form action="index.php" method="POST" style="display:flex;flex-direction:column;align-items:  center;justify-content: center;height:90vh;">
         <label for="Nume">Prenume/Nume</label>
-        <input name="Nume" id="Nume" type="text" placeholder="Sue Davis" required>
+        <input class="Input" name="Nume" id="Nume" type="text" placeholder="Sue Davis" required>
         <label for="Pseudo">Pseudonume</label>
-        <input name="Pseudo" id="Pseudo" type="text" placeholder="Brovis" required>
+        <input  class="Input" name="Pseudo" id="Pseudo" type="text" placeholder="Brovis" required>
         <label for="Culoare">Culoare</label>
-        <input name="Culoare" id="Culoare" type="color" required>
-        <label for="Email">Email</label>
-        <input name="Email" id="Email" type="email" placeholder="nume@gmail.com" required>
+        <input  class="Input" name="Culoare" id="Culoare" type="color" required>
+        <label  for="Email">Email</label>
+        <input  class="Input" name="Email" id="Email" type="email" placeholder="nume@gmail.com" required>
         <label for="Parola">Parola</label>
-        <input name="Parola" id="Parola" type="password" placeholder="**********" required>
+        <input  class="Input" name="Parola" id="Parola" type="password" placeholder="**********" required>
     <div style="display:block;
         margin:2 auto;">
     <button id="butonf" type="submit">Trimite</button>
@@ -78,6 +47,9 @@ setInterval(ceas, 1000)
     </div>
     </div>
     </form>
+ <footer id="picior">
+            <span>&copy; <a href="https://www.instagram.com/rares_marincas/"> Marincas Rares </a> ,All rigths reserved!</span>
+        </footer>
     <script src="script.js"></script>
     </body>
     </html>
