@@ -59,6 +59,9 @@ nav li a:hover{
 nav li a:active{
     color:rgb(251, 202, 87);
 }
+a:hover{
+    color:white;
+}
 .calculator{
     max-width:500px;
     border-radius:50px;
